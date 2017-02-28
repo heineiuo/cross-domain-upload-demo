@@ -1,0 +1,6 @@
+.idea
+*.log*
+.DS_Store
+Thumb.db
+node_modules
+upload/**/*

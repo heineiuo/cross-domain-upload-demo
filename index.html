@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="Family-tree">
+  <meta name="author" content="Heineiuo">
+  <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+  <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+  <meta name="apple-mobile-web-app-title" content="Material Console">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="HandheldFriendly" content="True">
+  <meta http-equiv="cleartype" content="on">
+</head>
+<body>
+<div id="app"></div>
+<script src="http://unpkg.com/babel-polyfill@6.23.0/dist/polyfill.js"></script>
+<script src="http://unpkg.com/systemjs@0.20.9/dist/system.src.js"></script>
+
+<script>
+  System.config({
+    baseUrl: '/',
+    meta: {
+      "*.js": {
+        format: 'amd'
+      }
+    },
+    map: {
+      react: 'http://unpkg.com/react@15.4.2/dist/react.js',
+      'react-dom': 'http://unpkg.com/react-dom@15.4.2/dist/react-dom.js'
+    }
+  });
+
+  System.import('http://127.0.0.1:8085/dist/cross-domain-upload-demo.js');
+</script>
+</body>
+</html>

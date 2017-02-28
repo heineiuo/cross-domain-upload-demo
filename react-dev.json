@@ -1,0 +1,28 @@
+{
+  "targets": [
+    {
+      "disable": false,
+      "origin": false,
+      "key": "cross-domain-upload-demo",
+      "filename": "./client.js",
+      "distPath": "./dist",
+      "devPublicPath": "http://127.0.0.1:8085/dist/",
+      "externals": {
+        "react": {
+          "root": "React",
+          "amd": "react",
+          "commonjs": "react"
+        },
+        "react-dom": {
+          "root": "ReactDOM",
+          "amd": "react-dom",
+          "commonjs": "react-dom"
+        }
+      },
+      "isLibrary": true
+    }
+  ],
+  "useBabelrc": true,
+  "devPublicPath": "./",
+  "modulesNeedBabel": []
+}
